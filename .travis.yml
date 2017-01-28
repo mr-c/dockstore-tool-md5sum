@@ -5,7 +5,7 @@ services:
 
 notifications:
   slack:
-    on_success: never
+    on_success: always
     on_failure: always
     rooms:
       - ucsc-cgl:AgBFUJz4usuTPkeNS245lTCF
