@@ -58,6 +58,10 @@ Run it using the `dockstore` CLI locally with the Dockstore.cwl file (instead of
 $> dockstore tool launch --entry Dockstore.cwl --local-entry --json test.json
 ```
 
+## Test with travis-ci
+
+See the `.travis.yml` file.
+
 ## Publishing
 
 At this point you follow the SOP from the [Dockstore.org site]()
