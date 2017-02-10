@@ -6,7 +6,7 @@ task md5 {
    }
 
   output {
-    String value = read_string("md5sum.txt")
+     File value = "md5sum.txt"
   }
 
   runtime {
