@@ -22,7 +22,7 @@ dct:creator:
 
 requirements:
 - class: DockerRequirement
-  dockerPull: quay.io/briandoconnor/dockstore-tool-md5sum:1.0.1
+  dockerPull: quay.io/briandoconnor/dockstore-tool-md5sum:1.0.2
 - class: InlineJavascriptRequirement
 
 hints:

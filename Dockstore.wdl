@@ -10,9 +10,9 @@ task md5 {
  }
 
  runtime {
-   docker: "quay.io/briandoconnor/dockstore-tool-md5sum:1.0.1"
+   docker: "quay.io/briandoconnor/dockstore-tool-md5sum:1.0.2"
    cpu: 1
-   memory: "512M"
+   memory: "512 MB"
  }
 }
 

@@ -25,7 +25,7 @@ avro==1.8.1
 Normally you would let [Quay.io](http://quay.io) build this.  But, if you need to build
 manually, locally you would execute:
 
-    docker build -t quay.io/briandoconnor/dockstore-tool-md5sum:1.0.1 .
+    docker build -t quay.io/briandoconnor/dockstore-tool-md5sum:1.0.2 .
 
 ## WDL Testing
 
@@ -95,7 +95,7 @@ Or you can run it from the latest release on Dockstore:
 
 ```
 # run this from the Dockstore
-$> dockstore tool launch --entry quay.io/briandoconnor/dockstore-tool-bamstats:1.0.1 --json test.json
+$> dockstore tool launch --entry quay.io/briandoconnor/dockstore-tool-bamstats:1.0.2 --json test.json
 ```
 
 ## Test with travis-ci
