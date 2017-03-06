@@ -15,10 +15,10 @@ doc: |
   A very, very simple Docker container for the md5sum command. See the [README](https://github.com/briandoconnor/dockstore-tool-md5sum/blob/master/README.md) for more information.
 
 
-dct:creator:
-  '@id': http://orcid.org/0000-0002-7681-6415
-  foaf:name: Brian O'Connor
-  foaf:mbox: briandoconnor@gmail.com
+#dct:creator:
+#  '@id': http://orcid.org/0000-0002-7681-6415
+#  foaf:name: Brian O'Connor
+#  foaf:mbox: briandoconnor@gmail.com
 
 requirements:
 - class: DockerRequirement
@@ -27,10 +27,10 @@ requirements:
 
 hints:
 - class: ResourceRequirement
+  # The command really requires very little resources.
   coresMin: 1
   ramMin: 1024
   outdirMin: 512000
-  description: the command really requires very little resources.
 
 inputs:
   input_file:
