@@ -25,7 +25,7 @@ avro==1.8.1
 Normally you would let [Quay.io](http://quay.io) build this.  But, if you need to build
 manually, locally you would execute:
 
-    docker build -t quay.io/briandoconnor/dockstore-tool-md5sum:1.0.2 .
+    docker build -t quay.io/briandoconnor/dockstore-tool-md5sum:1.0.3 .
 
 ## WDL Testing
 
@@ -67,7 +67,7 @@ directions to setup the CLI.  It lets you run a Docker container with a CWL desc
 
 #### Make a Parameters JSON
 
-This is the parameterization of the md5sum tool, a copy is present in this repo called `test.json`:
+This is the parameterization of the md5sum tool, a copy is present in this repo called `test.dockstore.json`:
 
 ```
 {
@@ -82,6 +82,14 @@ This is the parameterization of the md5sum tool, a copy is present in this repo 
 }
 ```
 
+You will also see a `test.json` file which is the same but with the "output_file" removed. This means when you run it via the Dockstore CLI you need to find the output by looking at the cwltool STDOUT e.g. look at this file:
+
+    Saving copy of cwltool stdout to: /Users/boconnor/Development/gitroot/dockstore-tool-md5sum/./datastore/launcher-002bcb21-11e2-47d4-96f5-fb542eb48bb5/outputs/cwltool.stdout.txt
+
+This will tell you the location of the output md5sum file.
+
+You might need to use this "output_file" free `test.json` if you are executing a more strict CWL execution engine like Arvados.
+
 #### Run with the CLI
 
 Run it using the `dockstore` CLI locally with the Dockstore.cwl file (great for testing if you make changes locally):
@@ -95,7 +103,7 @@ Or you can run it from the latest release on Dockstore:
 
 ```
 # run this from the Dockstore
-$> dockstore tool launch --entry quay.io/briandoconnor/dockstore-tool-bamstats:1.0.2 --json test.json
+$> dockstore tool launch --entry quay.io/briandoconnor/dockstore-tool-bamstats:1.0.3 --json test.json
 ```
 
 ## Test with travis-ci
