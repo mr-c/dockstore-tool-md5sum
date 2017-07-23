@@ -103,7 +103,7 @@ Or you can run it from the latest release on Dockstore:
 
 ```
 # run this from the Dockstore
-$> dockstore tool launch --entry quay.io/briandoconnor/dockstore-tool-bamstats:1.0.3 --json test.json
+$> dockstore tool launch --entry quay.io/briandoconnor/dockstore-tool-bamstats:1.0.4 --json test.json
 ```
 
 ## Test with travis-ci
