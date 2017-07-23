@@ -22,7 +22,7 @@ doc: |
 
 requirements:
 - class: DockerRequirement
-  dockerPull: quay.io/briandoconnor/dockstore-tool-md5sum:1.0.3
+  dockerPull: quay.io/briandoconnor/dockstore-tool-md5sum:1.0.4
 - class: InlineJavascriptRequirement
 
 hints:
