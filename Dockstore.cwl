@@ -30,7 +30,7 @@ hints:
   # The command really requires very little resources.
   coresMin: 1
   ramMin: 1024
-  outdirMin: 512000
+  outdirMin: 1024
 
 inputs:
   input_file:
