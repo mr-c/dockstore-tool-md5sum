@@ -25,7 +25,7 @@ avro==1.8.1
 Normally you would let [Quay.io](http://quay.io) build this.  But, if you need to build
 manually, locally you would execute:
 
-    docker build -t quay.io/briandoconnor/dockstore-tool-md5sum:1.0.3 .
+    docker build -t quay.io/briandoconnor/dockstore-tool-md5sum:1.0.4 .
 
 ## WDL Testing
 
