@@ -1,0 +1,9 @@
+version: 1.2
+tools:
+- subclass: CWL
+  primaryDescriptorPath: /Dockstore.cwl
+  testParameterFiles:  [ /test.json ]
+  topic: "A very simple tool that just performs an md5sum"
+  authors:
+      - name: Brian O'Connor
+        email: briandoconnor@gmail.com
