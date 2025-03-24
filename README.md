@@ -1,5 +1,9 @@
-[![Docker Repository on Quay.io](https://quay.io/repository/briandoconnor/dockstore-tool-md5sum/status "Docker Repository on Quay.io")](https://quay.io/repository/briandoconnor/dockstore-tool-md5sum)
+[![Docker Repository on Quay.io](https://quay.io/repository/mr_c/dockstore-tool-md5sum/status "Docker Repository on Quay.io")](https://quay.io/repository/mr_c/dockstore-tool-md5sum)
 [![Build Status](https://travis-ci.org/briandoconnor/dockstore-tool-md5sum.svg)](https://travis-ci.org/briandoconnor/dockstore-tool-md5sum)
+
+## Fork
+
+This repo is a fork of https://github.com/briandoconnor/dockstore-tool-md5sum with a working container.
 
 # dockstore-tool-md5sum
 
@@ -25,7 +29,7 @@ avro==1.8.1
 Normally you would let [Quay.io](http://quay.io) build this.  But, if you need to build
 manually, locally you would execute:
 
-    docker build -t quay.io/briandoconnor/dockstore-tool-md5sum:1.0.4 .
+    docker build -t quay.io/mr_c/dockstore-tool-md5sum:1.0.4 .
 
 ## WDL Testing
 
@@ -103,7 +107,7 @@ Or you can run it from the latest release on Dockstore:
 
 ```
 # run this from the Dockstore
-$> dockstore tool launch --entry quay.io/briandoconnor/dockstore-tool-bamstats:1.0.4 --json test.json
+$> dockstore tool launch --entry quay.io/mr_c/dockstore-tool-bamstats:1.0.4 --json test.json
 ```
 
 ## Test with travis-ci

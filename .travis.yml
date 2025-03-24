@@ -11,7 +11,7 @@ notifications:
       - ucsc-cgl:AgBFUJz4usuTPkeNS245lTCF
 
 before_install:
-  - docker build -t quay.io/briandoconnor/dockstore-tool-md5sum .
+  - docker build -t quay.io/mr_c/dockstore-tool-md5sum .
   - pip2.7 install --user setuptools==28.8.0
 
 install:
